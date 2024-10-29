@@ -8,8 +8,8 @@ import { getInitials, getRandomColor } from "./utils/helpers";
 function App() {
   const [tickets, setTickets] = useState([]);
   const [users, setUsers] = useState([]);
-  const [grouping, setGrouping] = useState("");
-  const [sortOption, setSortOption] = useState("");
+  const [grouping, setGrouping] = useState(localStorage.getItem("grouping") === null ? "status" : localStorage.getItem("grouping") );
+  const [sortOption, setSortOption] = useState(localStorage.getItem("sortOption") === null ? "priority" : localStorage.getItem("sortOption"));
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const priorityNames = {
         0: "No Priority",
@@ -22,10 +22,6 @@ function App() {
 
   useEffect(() => {
     fetchTickets();
-    const savedGrouping = localStorage.getItem("grouping");
-    const savedSortOption = localStorage.getItem("sortOption");
-    if (savedGrouping) setGrouping(savedGrouping);
-    if (savedSortOption) setSortOption(savedSortOption);
   }, []);
 
   useEffect(() => {
