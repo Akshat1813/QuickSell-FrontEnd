@@ -6,7 +6,7 @@ const Dropdown = ({ grouping, sortOption, handleGroupingChange, handleSortChange
       <div className="display-button" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
         <img src="./icons_FEtask/Display.svg" alt="Display" />
         Display
-        <img src="./icons_FEtask/Down.svg" alt="Down" />
+        <img src="./icons_FEtask/down.svg" alt="Down" />
       </div>
       {isDropdownOpen && (
         <div className="dropdown">

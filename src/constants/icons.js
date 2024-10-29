@@ -2,8 +2,8 @@ export const statusIcons = {
     "In progress": <img src="./icons_FEtask/in-progress.svg" alt="In Progress" />,
     Todo: <img src="./icons_FEtask/To-do.svg" alt="Todo" />,
     Backlog: <img src="./icons_FEtask/Backlog.svg" alt="Backlog" />,
-    Done: <img src="./icons_FEtask/done.svg" alt="Done" />,
-    Cancelled: <img src="./icons_FEtask/cancelled.svg" alt="Cancelled" />,
+    Done: <img src="./icons_FEtask/Done.svg" alt="Done" />,
+    Cancelled: <img src="./icons_FEtask/Cancelled.svg" alt="Cancelled" />,
   };
   
   export const priorityIcons = {
